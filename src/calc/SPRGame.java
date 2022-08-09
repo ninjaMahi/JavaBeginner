@@ -23,11 +23,11 @@ public class SPRGame {
 
     //test get input
 
-    static void getUserChoice (){
+    static int getUserChoice (){
         Scanner sc= new Scanner(System.in); //System.in is a standard input stream
-        System.out.print("Enter a string: ");
+        System.out.print("Enter scissors (0)  paper (1) rock(2) : ");
         String str= sc.nextLine();              //reads string
-
+        return Integer.parseInt(str);
     }
 
 
@@ -36,10 +36,9 @@ public class SPRGame {
     public static void main(String[] args) {
         greeting();
 
-        getUserChoice();
 
         //set both user and computer to a num between 0 and 2
-        int p1choice = myRandomNum();
+        int p1choice = getUserChoice();
         int p2choice = myRandomNum();
 
         //print the option chosen by both computer and user
