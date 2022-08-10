@@ -14,6 +14,10 @@ public class Main {
     }
 
 
+
+
+
+
     static void myStaticMethod(){  //Static Method
         System.out.println("This is a static method");
     }
@@ -21,6 +25,8 @@ public class Main {
     public void myPublicMethod(){ //Public Method
         System.out.println("This is a public method");
     }
+
+
 
 
     public static void main(String args[]){ //where main code is called
